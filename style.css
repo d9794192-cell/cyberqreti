@@ -1,9 +1,39 @@
-body {
-  background-image: url("long4.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+/* Мобильные */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .header {
+        font-size: 18px;
+    }
 }
+
+/* Планшеты */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    .header {
+        font-size: 24px;
+    }
+}
+
+/* Десктоп */
+@media only screen and (min-width: 1025px) {
+    .header {
+        font-size: 32px;
+    }
+}
+
+body {
+    background-image: url("long6.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 /* style.css — общие стили языки программирования */
 /* Сброс отступов и базовый шрифт */
 * {
@@ -74,34 +104,51 @@ h3 {
     margin: 15px 0 8px 0;
 }
 
-p { margin-bottom: 12px; }
+p {
+    margin-bottom: 12px;
+}
 
 /* Стили таблицы */
 /* Стили таблицы */
 table {
-    width: 60%;                        /* чуть шире */
+    width: 60%;
+    /* чуть шире */
     border-collapse: collapse;
-    margin: 20px auto;                 /* центрирование */
-    background-color: #1e293b;         /* тёмный фон для контраста */
-    border-radius: 8px;                /* скруглённые углы */
-    overflow: hidden;                  /* чтобы скругление работало */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* лёгкая тень */
+    margin: 20px auto;
+    /* центрирование */
+    background-color: #1e293b;
+    /* тёмный фон для контраста */
+    border-radius: 8px;
+    /* скруглённые углы */
+    overflow: hidden;
+    /* чтобы скругление работало */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* лёгкая тень */
 }
 
 /* Стили таблицы */
 table {
-    width: 70%;                         /* шире, центрированно */
-    border-collapse: separate;          /* отдельные границы для закруглений */
-    border-spacing: 0;                  /* без пробелов между ячейками */
-    margin: 25px auto;                  /* центрирование с отступом сверху */
-    background-color: #f3f4f6;          /* светлый фон */
-    border-radius: 12px;                /* скруглённые углы */
-    overflow: hidden;                   /* для скруглений */
-    box-shadow: 0 6px 15px rgba(0,0,0,0.2); /* тень */
+    width: 70%;
+    /* шире, центрированно */
+    border-collapse: separate;
+    /* отдельные границы для закруглений */
+    border-spacing: 0;
+    /* без пробелов между ячейками */
+    margin: 25px auto;
+    /* центрирование с отступом сверху */
+    background-color: #f3f4f6;
+    /* светлый фон */
+    border-radius: 12px;
+    /* скруглённые углы */
+    overflow: hidden;
+    /* для скруглений */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    /* тень */
 }
 
 th {
-    background-color: #6366f1;          /* фиолетово-синий */
+    background-color: #6366f1;
+    /* фиолетово-синий */
     color: #ffffff;
     padding: 16px;
     text-align: center;
@@ -112,37 +159,46 @@ th {
 
 td {
     padding: 14px 12px;
-    border-bottom: 1px solid #d1d5db;  /* светлая граница */
-    color: #1f2937;                     /* тёмный текст */
+    border-bottom: 1px solid #d1d5db;
+    /* светлая граница */
+    color: #1f2937;
+    /* тёмный текст */
     text-align: center;
     font-size: 15px;
 }
 
 tr:nth-child(even) {
-    background-color: #e5e7eb;          /* светлая полоска через одну строку */
+    background-color: #e5e7eb;
+    /* светлая полоска через одну строку */
 }
 
 tr:hover {
-    background-color: #c7d2fe;          /* эффект при наведении с голубым оттенком */
-    transition: background-color 0.3s;  /* плавное изменение цвета */
+    background-color: #c7d2fe;
+    /* эффект при наведении с голубым оттенком */
+    transition: background-color 0.3s;
+    /* плавное изменение цвета */
 }
 
 /* Подвал */
 footer {
     text-align: center;
-    padding: 25px;
-    background-color: #4b5563;          /* тёмно-серый фон */
-    color: #f9fafb;                     /* светлый текст */
-    margin-top: 50px;
+    padding: 40px;
+    background-color: #4b5563;
+    /* тёмно-серый фон */
+    color: #f9fafb;
+    /* светлый текст */
+    margin-top: 230px;
     font-size: 16px;
     font-weight: 500;
-    border-top: 3px solid #6366f1;      /* цветной акцент */
+    border-top: 3px solid #6366f1;
+    /* цветной акцент */
     letter-spacing: 0.5px;
 }
 
 /* Медиа-элементы */
 /* Видео и iframe */
-iframe, video {
+iframe,
+video {
     width: 80%;
     max-width: 800px;
     height: auto;
@@ -151,7 +207,7 @@ iframe, video {
     margin: 25px auto;
     border: 3px solid #ff6b6b;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 /* Картинки */
@@ -163,7 +219,7 @@ img {
     border-radius: 12px;
     display: block;
     margin: 20px auto;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease;
 }
 
