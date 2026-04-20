@@ -1,31 +1,4 @@
-/* Мобильные */
-@media only screen and (max-width: 600px) {
-    body {
-        font-size: 14px;
-    }
 
-    .header {
-        font-size: 18px;
-    }
-}
-
-/* Планшеты */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-    body {
-        font-size: 16px;
-    }
-
-    .header {
-        font-size: 24px;
-    }
-}
-
-/* Десктоп */
-@media only screen and (min-width: 1025px) {
-    .header {
-        font-size: 32px;
-    }
-}
 
 body {
     background-image: url("long6.png");
